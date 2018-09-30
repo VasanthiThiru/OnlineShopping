@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="48.452928">
+<testcase classname="Order T-Shirt" name="Login Functionalaity" time="22.259847">
+<system-out><![CDATA[Given User have the valid credential and application is up..................passed
+When User login to the application with Valid Credentials...................passed
+Then login should be successful  "My account - My Store"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Order T-Shirt" name="Order Tshirt - Opening the Tshirt page" time="3.373896">
+<system-out><![CDATA[Given User is on My Account My store page...................................passed
+When User click on TShirt Tab...............................................passed
+Then User should land on "T-SHIRTS" shopping Page...........................passed
+And User should see the Tshirts in my TShirt shopping page..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Order T-Shirt" name="Order Tshirt - Adding a TShirt to the cart" time="6.392119">
+<system-out><![CDATA[Given User is on a TShirt shopping Page.....................................passed
+When User sort the TShirt "In stock"........................................passed
+And User open the required TShirt "Faded Short Sleeve T-shirts".............passed
+And User select the Quanity/Size/Colour "Blue","S","2"......................passed
+And User click on add to card button........................................passed
+Then User should see the selected TShirt in the add to cart confirmation page with "Faded Short Sleeve T-shirts","Blue","S","2".passed
+And User  shoud see the message "Product successfully added to your shopping cart".passed
+]]></system-out>
+</testcase>
+<testcase classname="Order T-Shirt" name="Order Tshirt -Check out the selected TShirt to the shopping cart summary" time="2.825783">
+<system-out><![CDATA[Given User is on the "SHOPPING-CART SUMMARY" page...........................passed
+Then User should  see the selected TShirt in the shopping cart summary page with "Faded Short Sleeve T-shirts","2","S","Blue".passed
+]]></system-out>
+</testcase>
+<testcase classname="Order T-Shirt" name="Order Tshirt -Check out the selected product to the Address to update the address" time="6.658482">
+<system-out><![CDATA[Given User is on "ADDRESSES" page...........................................passed
+When User click on delivery address update button...........................passed
+And User update the address Fields with "pallikaranai"......................passed
+And User clicks on save button..............................................passed
+Then User should see the updated address in the delivery item box "pallikaranai".passed
+]]></system-out>
+</testcase>
+<testcase classname="Order T-Shirt" name="Order Tshirt -Check out the selected product to the shipping" time="2.226966">
+<system-out><![CDATA[Given User is on the shipping page with title "SHIPPING"....................passed
+Then User should able to select the Terms of service "1"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Pesonal Information" name="Update Personal Information" time="4.715835">
+<system-out><![CDATA[Given User login to the application with Valid Credentials..................passed
+When User click on my personal info link....................................passed
+And User Update FirstName "Vasanthi" and CurrentPassword....................passed
+And User click on Save button...............................................passed
+Then User should see the update confirmation message "Your personal information has been successfully updated.".passed
+]]></system-out>
+</testcase>
+</testsuite>
